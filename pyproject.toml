@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spoken-otp"
+version = "0.1.0"
+description = "Generate decimal one-time codes using speech penalties and a minimum code space"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["otp", "verification", "speech", "phonetics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+]
+
+[project.scripts]
+spoken-otp = "spoken_otp.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/saurabhgangurde/spoken-otp"
+Issues = "https://github.com/saurabhgangurde/spoken-otp/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
